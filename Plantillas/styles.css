@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+	height: 100vh;
+	/*Cambios*/
+	margin: 10px;
+	padding: 10px;
+	overflow: auto;
+
+	background-color: black;
+}
+
+.divCabecera {
+	height: 100px;
+	margin: 10px;
+	
+
+	background-color: aquamarine;
+}
+
+.divPrincipal {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr); /*Repite cuatro veces 1fr*/
+	height: 100%;
+	margin: 10px;
+
+	background-color: brown;
+}
+
+.zonaNavegacion {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	background-color: blue;
+}
+
+.zonaNavegacion div {
+	width: 1fr;
+	min-height: 50px;
+	height: auto;
+	margin: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	border-radius: 6px;
+
+	background-color: chartreuse;
+}
+
+.zonaNavegacion div:hover {
+	background-color: green;
+}
+
+.zonaContenido {
+	grid-column: 2 / 5;
+	margin: 5px;
+	padding-left: 5px;
+
+	border-radius: 6px;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+
+	background-color: pink;
+}
