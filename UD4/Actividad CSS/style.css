@@ -1,0 +1,50 @@
+
+
+/* Especificidad en CSS */
+
+table{
+    border-collapse: collapse;
+    text-align: center;
+
+    width: 200px;
+    height: 200px;
+}
+
+.table__row--first-row{
+    border-bottom: 2px solid black;
+}
+
+.row__td--right-bottom{
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.row__td--bottom{
+    border-bottom: 1px solid gray;
+}
+
+.row__td--right{
+    border-right: 1px solid gray;
+}
+
+.header__column-right{
+    border-right: 2px solid black;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h2{
+    color:navy;
+}
+
+h4{
+    text-align: justify;
+}
+
+
+caption {
+    font-size: 1em;
+}
+
