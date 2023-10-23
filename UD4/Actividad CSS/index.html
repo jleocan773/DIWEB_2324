@@ -1,207 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Tabla</title>
-</head>
-<body>
-    <h2>Header de la Página</h2>
-    <section>
+  </head>
+  <body>
+    <div class="tictactoe">
+      <h2>Header de la Página</h2>
+      <br />
+      <section>
         <table>
-            <caption>TIC TAC TOE</caption>
-            <tr class="table__row--first-row">
-                <th class="header__column-right"></th>
-                <th>col1</th>
-                <th>col2</th>
-                <th>col3</th>
-            </tr>
-            <tr>
-                <th class="header__column-right">row1</th>
-                <td class="row__td--right-bottom"></td>
-                <td class="row__td--right-bottom"></td>
-                <td class="row__td--right-bottom"></td>
-            </tr>
-            <tr>
-                <th class="header__column-right">row2</th>
-                <td class="row__td--right-bottom"></td>
-                <td class="row__td--right-bottom"></td>
-                <td class="row__td--right-bottom"></td>
-            </tr>
-            <tr>
-                <th class="header__column-right">row3</th>
-                <td class="row__td--right-bottom"></td>
-                <td class="row__td--right-bottom"></td>
-                <td class="row__td--right-bottom"></td>
-            </tr>
+          <caption>
+            TIC TAC TOE
+          </caption>
+          <tr class="table__row--first-row">
+            <th class="header__column-right"></th>
+            <th>col1</th>
+            <th>col2</th>
+            <th>col3</th>
+          </tr>
+          <tr>
+            <th class="header__column-right">row1</th>
+            <td class="row__td--right-bottom"></td>
+            <td class="row__td--right-bottom"></td>
+            <td class="row__td--right-bottom"></td>
+          </tr>
+          <tr>
+            <th class="header__column-right">row2</th>
+            <td class="row__td--right-bottom"></td>
+            <td class="row__td--right-bottom"></td>
+            <td class="row__td--right-bottom"></td>
+          </tr>
+          <tr>
+            <th class="header__column-right">row3</th>
+            <td class="row__td--right-bottom"></td>
+            <td class="row__td--right-bottom"></td>
+            <td class="row__td--right-bottom"></td>
+          </tr>
         </table>
+        <br />
+        <h4>Footer de la <span style="color: #e06f4d">página</span></h4>
+      </section>
+    </div>
 
-        <h4>Footer de la <span style="color: orange;">Página</span></h4>
+    <br />
+    <br />
+    <br />
 
-    </section>
-
-    <br>
-
-    <section>
-        <table border="1px solid black" style="text-align: center">
-            <tr>
-                <th></th>
-                <th>Tipos</th>
-                <th>Efectivo</th>
-                <th>Poco Efectivo</th>
-                <th>Débil Contra</th>
-                <th>Inmune Contra
-
-                </th>
+    <div class="tablaTipos">
+      <h2>Debilidades Pokemon</h2>
+      <br />
+      <section>
+        <table>
+            <tr style="background-color: #fd0000" class="table__row--first-row">
+              <th></th>
+              <th>Tipos</th>
+              <th>Efectivo</th>
+              <th>
+                Poco <br />
+                Efectivo
+              </th>
+              <th>
+                Débil <br />
+                Contra
+              </th>
+              <th>
+                Inmune <br />
+                Contra
+              </th>
             </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #60A2B9">Acero</th>
-                <td>Roca,Hielo,Hada</td>
-                <td>Acero,Agua,Eléctrico,Fuego</td>
-                <td>Fuego,Tierra,Lucha</td>
-                <td>Veneno</td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #82BAEF">Volador</th>
-                <td>Bicho,Lucha,Planta</td>
-                <td>Eléctrico, Roca</td>
-                <td>Eléctrico, Hielo, Roca</td>
-                <td>Tierra</td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #2481EF">Agua</th>
-                <td>Fuego,Roca,Agua</td>
-                <td>Agua,Dragón,Planta</td>
-                <td>Planta, Eléctrico</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #3DD9FF">Hielo</th>
-                <td>Volador,Planta,Tierra,Dragón</td>
-                <td>Agua,Hielo,Acero</td>
-                <td>Fuego,Lucha,Roca,Acero</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #3DA224">Planta</th>
-                <td>Agua,Tierra,Roca</td>
-                <td>Bicho,Dragón,Fuego,Planta,Veneno,Volador</td>
-                <td>Bicho,Fuego,Hielo,Veneno,Volador</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #92A212">Bicho</th>
-                <td>Planta,Psíquico,Siniestro</td>
-                <td>Acero,Fantasma,Fuego,Hada,Lucha,Veneno,Volador</td>
-                <td>Fuego,Roca,Volador</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #FAC100">Electrico</th>
-                <td>Agua,Volador</td>
-                <td>Dragón,Eléctrico,Planta</td>
-                <td>Tierra</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #9EA19E">Normal</th>
-                <td></td>
-                <td>Roca,Acero</td>
-                <td>Lucha</td>
-                <td>Fantasma</td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #B0AA82">Roca</th>
-                <td>Bicho,Fuego,Hielo,Volador</td>
-                <td>Acero,Lucha,Tierra</td>
-                <td>Agua,Planta,Tierra,Lucha,Acero</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #92501B">Tierra</th>
-                <td>Acero,Eléctrico,Fuego,Roca,Veneno</td>
-                <td>Bicho, Planta</td>
-                <td>Agua,Planta,Hielo</td>
-                <td>Eléctrico</td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #E72324">Fuego</th>
-                <td>Acero,Bicho,Hielo,Planta</td>
-                <td>Agua,Dragón,Fuego,Roca</td>
-                <td>Agua,Roca,Tierra</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #FF8100">Lucha</th>
-                <td>Acero,Hielo,Normal,Roca,Siniestro</td>
-                <td>Bicho,Hada,Psíquico,Veneno,Volador</td>
-                <td>Hada,Psíquico,Volador</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #EF70EF">Hada</th>
-                <td>Dragón,Lucha,Siniestro</td>
-                <td>Acero,Fuego,Veneno</td>
-                <td>Acero,Veneno</td>
-                <td>Dragón</td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #EF3F79">Psíquico</th>
-                <td>Lucha,Veneno</td>
-                <td>Acero,Psíquico</td>
-                <td>Bicho,Fantasma,Siniestro</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #923FCC">Veneno</th>
-                <td>Hada,Planta</td>
-                <td>Fantasma,Roca,Tierra,Veneno</td>
-                <td>Psíquico, Tierra</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #4F60E2">Dragón</th>
-                <td>Dragón</td>
-                <td>Acero</td>
-                <td>Dragón,Hada,Hielo</td>
-                <td></td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #754075">Fantasma</th>
-                <td>Fantasma,Psíquico</td>
-                <td>Siniestro</td>
-                <td>Fantasma,Siniestro</td>
-                <td>Lucha,Normal</td>
-            </tr>
-            <tr>
-                <th></th>
-                <th style="background-color: #4F3F3D">Siniestro</th>
-                <td>Fantasma,Psíquico</td>
-                <td>Hada,Lucha,Siniestro</td>
-                <td>Bicho,Hada,Lucha</td>
-                <td>Psíquico</td>
-            </tr>
+          <tr style="background-color: #888687">
+            <th></th>
+            <th>Acero</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #3583da">
+            <th></th>
+            <th>Volador</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #3418cf">
+            <th></th>
+            <th>Agua</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #56def2">
+            <th></th>
+            <th>Hielo</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #fce3c2">
+            <th></th>
+            <th>Planta</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #58aa44">
+            <th></th>
+            <th>Bicho</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #d8ee21">
+            <th></th>
+            <th>Electrico</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #fde4c3">
+            <th></th>
+            <th>Normal</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #d38c34">
+            <th></th>
+            <th>Roca</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #cf7000">
+            <th></th>
+            <th>Tierra</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #fc8a00">
+            <th></th>
+            <th>Fuego</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #fc5126">
+            <th></th>
+            <th>Lucha</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #febbde">
+            <th></th>
+            <th>Hada</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #de5147">
+            <th></th>
+            <th>Psíquico</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #f57bdb">
+            <th></th>
+            <th>Veneno</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #c175cc">
+            <th></th>
+            <th>Dragón</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #6e2d89">
+            <th></th>
+            <th>Fantasma</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr style="background-color: #6e323e">
+            <th></th>
+            <th>Siniestro</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
         </table>
-    </section>
-    <h4>Footer de la Página</h4>
-
-</body>
+      </section>
+      <br />
+      <h4>Footer de la <span style="color: #e06f4d">página</span></h4>
+    </div>
+  </body>
 </html>

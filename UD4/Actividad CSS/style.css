@@ -2,13 +2,6 @@
 
 /* Especificidad en CSS */
 
-table{
-    border-collapse: collapse;
-    text-align: center;
-
-    width: 200px;
-    height: 200px;
-}
 
 .table__row--first-row{
     border-bottom: 2px solid black;
@@ -16,10 +9,6 @@ table{
 
 .row__td--right-bottom{
     border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-}
-
-.row__td--bottom{
     border-bottom: 1px solid gray;
 }
 
@@ -31,16 +20,20 @@ table{
     border-right: 2px solid black;
 }
 
+
 h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h2{
-    color:navy;
+    color:#0200FA;
+    text-align: center;
+    margin: 0 auto;
 }
 
 h4{
-    text-align: justify;
+    text-align: center;
+    margin: 0 auto;
 }
 
 
@@ -48,3 +41,25 @@ caption {
     font-size: 1em;
 }
 
+
+.tictactoe table {
+    border-collapse: collapse;
+    text-align: center;
+
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+.tablaTipos table {
+    border-collapse: collapse;
+    text-align: center;
+
+    width: 375px;
+    margin: 0 auto;
+}
+
+.tablaTipos th:nth-child(1) {
+    width: 35px;
+}
