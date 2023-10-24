@@ -1,0 +1,13 @@
+.cuerpo__divPrueba{
+    color: black;
+    background-color: orange;
+
+    margin: 20px;
+
+    border: 1px solid black;
+
+    height: 50px;
+    width: 100px;
+
+    padding: 10px;
+}

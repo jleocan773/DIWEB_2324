@@ -1,0 +1,26 @@
+.cuerpo__header {
+    background-color: grey;
+    height: 200px;
+    width: 100%;
+    display: flex;
+}
+
+.cuerpo__cajaHeader {
+    background-color: blue;
+    height: 200px;
+    width: 30%;
+}
+
+.cuerpo__caja1 {
+    background-color: red;
+    height: 200px;
+    width: 30%;
+}
+
+.cuerpo__caja2 {
+    right: 0%;
+    left: auto;
+    background-color: white;
+    height: 200px;
+    width: 50px;
+}

@@ -1,0 +1,13 @@
+h1, p, h4{
+    font-family: Arial;
+    color red;
+}
+
+div p {
+    font-family: 'Times New Roman', Times, serif;
+    color: green;
+} 
+
+div > p {
+    color: blue;
+}

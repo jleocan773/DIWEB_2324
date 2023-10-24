@@ -1,0 +1,39 @@
+.cuerpo__divPrueba{
+    color: black;
+    background-color: orange;
+
+    border: 1px solid black;
+
+    height: 50px;
+    width: 100px;
+
+    padding: 10px;
+}
+
+.cuerpo__divPrueba--red{
+    background-color: red;
+    /*Posición relativa hace que se mueva desde la posición en la que estaba sin eliminar ese espacio anterior */
+    /*Posición absolute hace que se mueva desde la posición en la que estaba eliminando ese espacio anterior */
+    position: absolute;
+
+    top:10px;
+    left:30px;
+
+}
+
+.cuerpo__divPrueba--blue{
+    background-color: blue;
+}
+
+.cuerpo__spanPrueba{
+    color: black;
+    background-color: #DE38AC;
+    margin-left: 10px;
+
+    border: 1px solid black;
+
+    height: 50px;
+    width: 100px;
+
+    padding: 10px;
+}
