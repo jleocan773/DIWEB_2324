@@ -1,26 +1,39 @@
 .cuerpo__header {
-    background-color: grey;
-    height: 200px;
-    width: 100%;
-    display: flex;
+  background-color: grey;
+  height: 200px;
+  width: 100%;
+  display: flex;
 }
 
 .cuerpo__cajaHeader {
-    background-color: blue;
-    height: 200px;
-    width: 30%;
+  background-color: blue;
+  width: 30%;
 }
 
 .cuerpo__caja1 {
-    background-color: red;
-    height: 200px;
-    width: 30%;
+  background-color: red;
+  width: 100px;
 }
 
 .cuerpo__caja2 {
-    right: 0%;
-    left: auto;
-    background-color: white;
-    height: 200px;
-    width: 50px;
+  background-color: green;
+  width: 50px;
+  margin-left: auto;
+  flex-direction: column;
+}
+
+.caja2__subcaja {
+  height: 66.66px;
+}
+
+.caja2__subcaja--roja {
+  background-color: red;
+}
+
+.caja2__subcaja--verde {
+  background-color: green;
+}
+
+.caja2__subcaja--azul {
+  background-color: blue;
 }
