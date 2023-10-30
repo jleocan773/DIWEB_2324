@@ -43,3 +43,15 @@ HTML
                 P🔥
     Footer
         P
+
+
+
+Posicionamiento:
+    position: absolute;
+    position: relative;
+    position: static; (por defecto)
+
+    También podemos usar right,left,top,bottom para posicionar un elemento. Por ejemplo, left 0 indica que hay 0 píxeles a la izquierda, left 0 top 0 estaría en la esquina superior izquierda, right 0 bottom 0 estaría en la esquina inferior derecha.
+
+    position relative hace que se mueva desde la posición en la que estaba sin eliminar ese espacio anterior. 
+    position absolute hace que se mueva desde la posición en la que estaba eliminando ese espacio anterior. 
