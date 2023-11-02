@@ -36,31 +36,38 @@ Tipografía:
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+JP&family=Roboto&display=swap");
 
-
 * {
-    font-family: 'Roboto', sans-serif ;
+	font-family: "Roboto", sans-serif;
 }
 
 body {
 	margin: 0;
+    background-color: #13191b;
 }
 
-h1,h2,h3,h4,h5,h6, a{
-    font-family: 'Roboto', sans-serif ;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+	font-family: "Roboto", sans-serif;
 }
 
-p, span, div {
-    font-family: 'Noto Seriff JP', sans-serif ;
+p,
+span,
+div {
+	font-family: "Noto Seriff JP", sans-serif;
 }
 
-#tituloPagina{
-    font-family: 'ZombieHolocaust', sans-serif;
+#tituloPagina {
+	font-family: "ZombieHolocaust", sans-serif;
 }
-
 
 .header {
 	height: 90px;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 	display: flex;
 	justify-content: space-around;
 }
@@ -68,56 +75,131 @@ p, span, div {
 .header__zonaTitulo {
 	height: 100%;
 	width: 20%;
-	background-color: #FFFFFF;
+	background-color: #ffffff;
 
-    border-radius: 20px;
+	border-radius: 20px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 
-    transition: 0.2s linear;
+	transition: 0.2s linear;
 }
 
-.header__zonaTitulo:hover { /*Pseudoclase hover */
-	background-color: #FF6600;
-    transform: scale(1.05);
+.header__zonaTitulo:hover {
+	/*Pseudoclase hover */
+	background-color: #ff6600;
+	transform: scale(1.05);
 
-    font-size: 1.2em; /* Medida que toma como referencia html */
+	font-size: 1.2em; /* Medida que toma como referencia html */
 }
-
 
 #zonaTitulo__logo img {
-    width: 60px;
-    height: auto;
+	width: 60px;
+	height: auto;
 }
 
 .header_zonaNavegacion {
 	height: 100%;
 	width: 40%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
 }
 
 .header_zonaNavegacion a {
-    text-decoration: none; /* Para quitar el underline */
-    color: #330033;
+	text-decoration: none; /* Para quitar el underline */
+	color: #330033;
 }
 
-.header_zonaNavegacion__div{
-    padding: 5px;
-    transition: 0.1s ease-out;
+.header_zonaNavegacion__div {
+	padding: 5px;
+	transition: 0.1s ease-out;
 }
 
-.header_zonaNavegacion__div:hover{
-    border-bottom: 3px solid #FF6600;
-    border-radius: 5px;
+.header_zonaNavegacion__div:hover {
+	border-bottom: 3px solid #ff6600;
+	border-radius: 5px;
 }
 
-.header_zonaNavegacion__div h3{
-    margin: 0;
+.header_zonaNavegacion__div h3 {
+	margin: 0;
+}
+
+/*
+******* ZONA MAIN *******
+*/
+
+.zonaMain {
+	margin-top: 10px;
+	display: grid;    
+
+
+	/*Número de columnas que queremos*/
+	grid-template-columns: repeat(12, 1fr);
+
+	/*Establecemos tamaño mínimo de row*/
+	grid-auto-rows: minmax(100px, auto);
+
+	/*Aplicamos "aire" a la página*/
+	row-gap: 10px;
+	column-gap: 10px;
+}
+
+.main__zonaImagen {
+	grid-column: 2/6;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.main__zonaImagen img {
+	width: auto; /*El % significa el % del contenedor del elemento*/
+	max-height: 300px;
+
+	transition: 0.1s linear;
+
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.main__zonaImagen img:hover {
+	transform: scale(1.01);
+}
+
+.main__zonaDescripcion {
+	grid-column: 6/12;
+    color: white;
+
+    border-left: 3px solid #330033;
+
+    padding: 10px;
+}
+
+.zonaDescripcion__actores-nota{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+.actores-nota__actores{
+    grid-column: 1;
+}
+
+.actores-nota__nota{
+    grid-column: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#nota__puntuacion{
+    font-family: "ZombieHolocaust";
+    font-size: 3em;
+    color: #009900;
 }
