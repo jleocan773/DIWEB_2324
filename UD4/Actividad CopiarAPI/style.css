@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.cuerpo__header {
+	background-color: #ef5350;
+	height: 3.125rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.header__zonaLogo {
+	align-items: flex-start;
+	height: 100%;
+	margin-left: 364px;
+}
+
+.header__zonaLogo img {
+	height: 42px;
+    width: auto;
+    margin-top: 4px;
+    margin-bottom: 5px;
+}
+
+.header__zonaLogo img:hover {
+	background-color: #e94141;
+}
+
+.header__zonaMenu {
+	display: flex;
+	height: 100%;
+	margin-right: 400px;
+	width: 335px;
+	justify-content: space-between;
+}
+
+.zonaMenu__Home,
+.zonaMenu__About,
+.zonaMenu__Apiv2,
+.zonaMenu__Graphql {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+    transition: background-color 0.3s;
+}
+
+.zonaMenu__Home a,
+.zonaMenu__About a,
+.zonaMenu__Apiv2 a,
+.zonaMenu__Graphql a {
+    color: white;
+    text-decoration: none;
+}
+
+.zonaMenu__Home a:hover,
+.zonaMenu__About a:hover,
+.zonaMenu__Apiv2 a:hover,
+.zonaMenu__Graphql a:hover {
+    background-color: #e94141;
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+
+.cuerpo__contenido {
+    display: flex;
+    background-color: aquamarine; 
+    height: 100vh;
+    width: 100%; 
+}
+
+.contenido__panelContenido{
+    margin-left: 380px; 
+    display: flex;
+    flex-direction: column;
+
+}
