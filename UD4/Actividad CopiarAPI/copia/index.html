@@ -2,46 +2,50 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copia PokeApi</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Documentation - PokéAPI</title>
 </head>
 
 <body>
-
-    <header class="cuerpo__header">
-
-        <div class="header__zonaLogo">
-            <img src="imgs/pokelogo.png" alt="LogoPokemon">
+    <header class="header">
+        <div id="header__zonaLogo">
+            <img src="images/pokeapi_256.3fa72200.png" alt="pokeapi" />
         </div>
-
-        <div class="header__zonaMenu">
-            <div class="header__zonaMenu--div">
-                <a href="home.html">Home</a>
+        <div class="header__zonaNavegacion">
+            <div class="header__zonaNavegacion--div">
+                <a href="#">
+                    <h3>Home</h3>
+                </a>
             </div>
-            <div class="header__zonaMenu--div">
-                <a href="about.html">About</a>
+            <div class="header__zonaNavegacion--div">
+                <a href="#">
+                    <h3>About</h3>
+                </a>
             </div>
-            <div class="header__zonaMenu--div">
-                <a href="apiv2.html">APIv2</a>
+            <div class="header__zonaNavegacion--div">
+                <a href="#">
+                    <h3>API v2</h3>
+                </a>
             </div>
-            <div class="header__zonaMenu--div">
-                <a href="graphql.html">GraphQL v1beta</a>
+            <div class="header__zonaNavegacion--div">
+                <a href="#">
+                    <h3>GraphQL v1beta</h3>
+                </a>
             </div>
         </div>
-
     </header>
 
-    <main class="main__contenido">
-        <nav class="main__contenido--panelContenido">
-            <h3 class="contents">Contents</h3>
-            <div class="panelContenido__opciones">
+    <main class="zonaMain">
+        <nav class="zonaMain__tablaContenido">
+            <h3 class="zonaNav__Contents">Contents</h3>
+            <div class="main__zonaNavegacion">
                 <a href="#Information">Information</a>
                 <a href="#FairUsePolicy">Fair Use Policy</a>
                 <a href="#Slack">Slack</a>
-                <a href="#WrapperLibraries">WrapperLibraries</a>
-                <hr/>
+                <a href="#WrapperLibraries">Wrapper Libraries</a>
+                <hr />
                 <a href="#ResourceLists">Resource Lists/Pagination</a>
                 <hr />
                 <a href="#">Berries</a>
@@ -59,14 +63,13 @@
             </div>
         </nav>
 
-        <div class="main__contenido--informacion">
+        <div class="main__Contenido">
             <p>
                 If you were using v1 of this API, please switch to v2 (this page).
-                <a href="https://pokeapi.co/docs/v1" style="text-decoration: none; color: #3190f0;">Read more...</a>
-                <br />
+                <a href="#" id="readMore">Read more...</a> <br />
                 <br />
                 <b>Quick tip:</b> Use your browser's "find on page" feature to search
-                for specific resource types (<kbd>Ctrl+F</kbd> or <kbd>Ctrl+F</kbd>).
+                for specific resource types (Ctrl+F or Cmd+F).
             </p>
             <section id="Information">
                 <h2>Information</h2>
@@ -215,24 +218,113 @@
                     </li>
                 </ul>
             </section>
-            <hr color="ef5350" />
+            <hr color="red" />
+            <br />
+            <section id="ResourceLists">
+                <h2>
+                    Resource Lists/Pagination
+                    <span style="opacity: 0.6; font-weight: lighter">(group)</span>
+                </h2>
+                <p>
+                    Calling any API endpoint without a resource ID or name will return a
+                    paginated list of available resources for that API. By default, a
+                    list "page" will contain up to 20 resources. If you would like to
+                    change this just add a 'limit' query parameter to the GET request,
+                    e.g. ?limit=60. You can use 'offset' to move to the next page, e.g.
+                    ?limit=60&offset=60.
+                </p>
+                <h3>
+                    Named
+                    <span style="opacity: 0.6; font-weight: lighter">(endpoint)</span>
+                </h3>
+                <p>
+                    <span class="GET">GET</span>
+                    https://pokeapi.co/api/v2/{endpoint}/
+                </p>
+                <span class="span__code">
+                    <pre>
+	{
+	  "count": 248,
+	  "next": "https://pokeapi.co/api/v2/ability/?limit=20&offset=20",
+	  "previous": null,
+	  "results": [
+		{
+		  "name": "stench",
+		  "url": "https://pokeapi.co/api/v2/ability/1/"
+		}
+	  ]
+	}
+	<hr />
+	<input type="checkbox"/>View raw JSON (0.213 kB, 11 lines)
+</pre>
+                </span>
+                <h3>
+                    NamedAPIResourceList
+                    <span style="opacity: 0.6; font-weight: lighter">(type)</span>
+                </h3>
+                <table class="tabla__NamedAPI">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Description</th>
+                            <th>Type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="table__name">count</td>
+                            <td class="table__info">
+                                <p>The total number of resources available from this API.</p>
+                            </td>
+                            <td class="table__info"><i>integer</i></td>
+                        </tr>
+                        <tr>
+                            <td class="table__name">next</td>
+                            <td class="table__info">
+                                <p>The URL for the next page in the list.</p>
+                            </td>
+                            <td class="table__info">string</td>
+                        </tr>
+                        <tr>
+                            <td class="table__name">previous</td>
+                            <td class="table__info">
+                                <p>The URL for the previous page in the list.</p>
+                            </td>
+                            <td class="table__info">string</td>
+                        </tr>
+                        <tr>
+                            <td class="table__name">results</td>
+                            <td class="table__info">
+                                <p>A list of named API resources.</p>
+                            </td>
+                            <td class="table__info">
+                                list
+                                <a href="https://pokeapi.co/docs/v2#namedapiresource">NamedAPIResource</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <hr color="red" />
+            <br />
+            <br />
+        </div>
     </main>
-    <footer>
-        <br />
-        <br />
-        <hr>
-        <p>
-            Created by <a>Paul Hallett</a> and other
-            <a href="https://github.com/PokeAPI/pokeapi#contributing">PokéAPI contributors</a>
-            around the world. Pokémon and Pokémon character names are trademarks of
-            Nintendo.
-        </p>
-        <span class="footer__statusSystem">
-            <span class="footer__status">status</span>
-            <span class="footer__systems">All Systems Operational</span>
-        </span>
-    </footer>
 </body>
-
+<hr color="red" />
+<footer>
+    <br />
+    <br />
+    <p>
+        Created by <a href="#">Paul Hallett</a> and other
+        <a href="https://github.com/PokeAPI/pokeapi#contributing">PokéAPI contributors</a>
+        around the world. Pokémon and Pokémon character names are trademarks of
+        Nintendo.
+    </p>
+    <span class="footer__statusSystem">
+        <span class="footer__status">status</span>
+        <span class="footer__systems">All Systems Operational</span>
+    </span>
+</footer>
 
 </html>
