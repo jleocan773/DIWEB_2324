@@ -29,6 +29,8 @@ Tipografía:
 
 */
 
+
+@import url("styleLaptop.css");
 @font-face {
 	font-family: "ZombieHolocaust";
 	src: url("Fonts/Zombie_Holocaust.ttf") format("truetype");
@@ -203,3 +205,62 @@ div {
     font-size: 3em;
     color: #009900;
 }
+
+@media all and (max-width: 920px){
+	.header {
+		height: 90px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+
+		position: sticky;
+		top: 0;
+		z-index: 1;
+		background-color: #fff6e9;
+
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header__zonaTitulo {
+		height: 100%;
+		width: 100%;
+		background-color: inherit;
+	
+		border-radius: 20px;
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	
+		transition: 0.2s linear;
+	}
+
+	.header_zonaNavegacion {
+		height: 100%;
+		width: 100%;
+		background-color: inherit;
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+}
+
+	.main__zonaImagen {
+		grid-column: 2/12;
+	
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.main__zonaDescripcion {
+		grid-column: 2/12;
+		color: white;
+		border-left: 0;
+		border-bottom: 3px solid #330033;
+		padding: 10px;
+	}
+

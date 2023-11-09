@@ -1,0 +1,35 @@
+*{
+    border: 0;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: red;
+
+}
+
+.header__zonaLogo img{
+    height: 50px;
+    width: 50px;
+}
+
+
+.header_zonaNavegacion {
+	height: 100%;
+	width: 40%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.header_zonaNavegacion a {
+	text-decoration: none; 
+}
+
+.header_zonaNavegacion__div {
+	padding: 5px;
+	transition: 0.1s ease-out;
+}
