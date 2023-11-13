@@ -1,35 +1,95 @@
-*{
-    border: 0;
+/*
+Paleta de Colores:
+
+Verde Bosque:
+Hex: #4C6E52
+
+Marrón Tierra:
+Hex: #8C6355
+
+Azul Cielo:
+Hex: #6FA6B6
+
+Naranja Puesta de Sol:
+Hex: #FF7F50
+
+Gris Piedra:
+Hex: #A9A9A9
+
+
+*/
+
+body {
+	margin: 0;
+	background-color: #A9A9A9;
 }
 
-.header{
-    display: flex;
-    justify-content: space-evenly;
-    background-color: red;
-
+.header {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #4C6E52;
 }
 
-.header__zonaLogo img{
-    height: 50px;
-    width: 50px;
+.header__zonaLogo img {
+	height: 50px;
+	width: 50px;
+	align-items: center;
 }
-
 
 .header_zonaNavegacion {
 	height: 100%;
-	width: 40%;
+	width: 15%;
 
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: right;
 	gap: 10px;
 }
 
 .header_zonaNavegacion a {
-	text-decoration: none; 
+	text-decoration: none;
 }
 
-.header_zonaNavegacion__div {
+.header__zonaNavegacion--div {
 	padding: 5px;
 	transition: 0.1s ease-out;
 }
+
+.zonaMain {
+    margin: 0px;
+	margin-top: 25px;
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    row-gap: 10px;
+}
+
+
+.zonaMain__imagen {
+	grid-column: 1/9;
+}
+
+.zonaMain__lista {
+	grid-column: 9/13;
+}
+
+.zonaMain_articulo {
+	padding-left: 35px;
+	grid-column: 1/9;
+}
+
+.zonaMain__footer {
+	border: 0;
+	display: flex;
+	flex-direction: row;
+	grid-column: 1/13;
+    justify-content: space-between;
+	align-items: center;
+	background-color: #8C6355;
+}
+
+
+
+
