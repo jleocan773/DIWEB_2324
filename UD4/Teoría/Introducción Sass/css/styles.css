@@ -1,0 +1,20 @@
+body {
+  background-color: #f0f0f0;
+}
+
+.header {
+  height: 10vh;
+  background-color: #1D1D1D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .header__div {
+  height: 3em;
+  width: 3em;
+  color: #f0f0f0;
+  padding: 10px;
+  margin-top: 3vh;
+}
+
+/*# sourceMappingURL=styles.css.map */
