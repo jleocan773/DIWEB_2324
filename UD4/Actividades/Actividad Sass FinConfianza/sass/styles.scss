@@ -1,0 +1,78 @@
+$color-fondo-contenido: #ffffff;
+$color-letra-contenido: #000000;
+
+$color-fondo-header: #000000;
+$color-letra-header: #ffffff;
+
+$color-fondo-nav: #838282;
+$color-letra-nav: #222222;
+
+$color-borde-elemento-nav: #b31312;
+
+//Función para cambiar el fondo de un elemento
+@mixin cambiar-fondo-y-letra($color-nuevo-fondo: #ffffff, $color-nueva-letra: #000000) {
+    background-color: $color-nuevo-fondo;
+    color: $color-nueva-letra;
+}
+
+@mixin establecer-grid($n-columnas: 12) {
+    display: grid;
+    grid-template-columns: repeat($n-columnas, 1fr);
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    @include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
+    @include establecer-grid();
+    background-color: pink;
+
+    h1 {
+        grid-column: 1/12;
+    }
+}
+
+.header__zonaLogo{
+    background-color: greenyellow;
+}
+
+.nav-bar {
+    @include cambiar-fondo-y-letra($color-fondo-nav, $color-letra-nav);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+    div {
+        padding-left: 1em;
+        padding-right: 1em;
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            padding: 1em;
+        }
+
+        a:hover {
+            border-bottom: 2px solid $color-borde-elemento-nav;
+        }
+    }
+}
+
+.a_active {
+    border-bottom: 2px solid $color-borde-elemento-nav;
+}
+
+.main-content {
+    @include cambiar-fondo-y-letra($color-fondo-contenido, $color-letra-contenido);
+    @include establecer-grid();
+
+    .main__publicacion {
+        grid-column: 3/11;
+    }
+}

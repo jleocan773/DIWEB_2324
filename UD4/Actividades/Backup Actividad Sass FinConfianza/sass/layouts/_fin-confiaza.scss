@@ -1,36 +1,3 @@
-/*
-
-Color de fondo:
-#FFFFFF
-
-Color de letra:
-#000000
-
-Color Header fondo: 
-#000000
-
-Color de letra Header:
-#FFFFFF
-
-Color fondo Nav: 
-#F0F0F0
-
-Color de letra Nav: 
-#222222
-
-*/
-
-$color-fondo-contenido: #ffffff;
-$color-letra-contenido: #000000;
-
-$color-fondo-header: #000000;
-$color-letra-header: #ffffff;
-
-$color-fondo-nav: #838282;
-$color-letra-nav: #222222;
-
-$color-borde-elemento-nav: #b31312;
-
 //Función para cambiar el fondo de un elemento
 @mixin cambiar-fondo-y-letra($color-nuevo-fondo: #ffffff, $color-nueva-letra: #000000) {
     background-color: $color-nuevo-fondo;
@@ -49,7 +16,7 @@ body {
 .header {
     @include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
     @include establecer-grid();
-    background-color: pink;
+    background-color: goldenrod;
 
     h1 {
         grid-column: 1/12;
