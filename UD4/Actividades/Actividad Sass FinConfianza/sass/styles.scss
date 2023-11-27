@@ -4,75 +4,226 @@ $color-letra-contenido: #000000;
 $color-fondo-header: #000000;
 $color-letra-header: #ffffff;
 
-$color-fondo-nav: #838282;
+$color-fondo-nav: #ffffff;
 $color-letra-nav: #222222;
 
 $color-borde-elemento-nav: #b31312;
 
+$color-fondo-footer: #3b3b3b;
+$color-letra-footer: #f0f0f0;
+
 //Función para cambiar el fondo de un elemento
-@mixin cambiar-fondo-y-letra($color-nuevo-fondo: #ffffff, $color-nueva-letra: #000000) {
-    background-color: $color-nuevo-fondo;
-    color: $color-nueva-letra;
+@mixin cambiar-fondo-y-letra(
+  $color-nuevo-fondo: #ffffff,
+  $color-nueva-letra: #000000
+) {
+  background-color: $color-nuevo-fondo;
+  color: $color-nueva-letra;
 }
 
 @mixin establecer-grid($n-columnas: 12) {
-    display: grid;
-    grid-template-columns: repeat($n-columnas, 1fr);
+  display: grid;
+  grid-template-columns: repeat($n-columnas, 1fr);
 }
 
+//Estilos para Fin de la Confianza
+
 body {
-    margin: 0;
+  margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 2/12;
 }
 
 .header {
-    @include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
-    @include establecer-grid();
-    background-color: pink;
+  @include cambiar-fondo-y-letra($color-fondo-header, $color-letra-header);
+  @include establecer-grid();
 
-    h1 {
-        grid-column: 1/12;
-    }
-}
-
-.header__zonaLogo{
-    background-color: greenyellow;
+  .header__zonaLogo {
+    grid-column: 3/11;
+    font-size: 2em;
+  }
 }
 
 .nav-bar {
-    @include cambiar-fondo-y-letra($color-fondo-nav, $color-letra-nav);
+  @include cambiar-fondo-y-letra($color-fondo-nav, $color-letra-nav);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    padding-top: 1em;
-    padding-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
 
-    div {
-        padding-left: 1em;
-        padding-right: 1em;
+  div {
+    padding-left: 1em;
+    padding-right: 1em;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        padding: 0 1em;
 
         a {
-            text-decoration: none;
-            color: inherit;
-            padding: 1em;
-        }
+          text-decoration: none;
+          color: inherit;
+          padding: 1em;
 
-        a:hover {
+          &:hover {
             border-bottom: 2px solid $color-borde-elemento-nav;
+          }
         }
-    }
-}
 
-.a_active {
-    border-bottom: 2px solid $color-borde-elemento-nav;
+        a.a__active {
+          border-bottom: 2px solid $color-borde-elemento-nav;
+        }
+      }
+    }
+  }
 }
 
 .main-content {
-    @include cambiar-fondo-y-letra($color-fondo-contenido, $color-letra-contenido);
-    @include establecer-grid();
+  @include cambiar-fondo-y-letra(
+    $color-fondo-contenido,
+    $color-letra-contenido
+  );
+  @include establecer-grid();
 
-    .main__publicacion {
-        grid-column: 3/11;
+  a {
+    color: red;
+    text-decoration: none;
+  }
+
+  section {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1.5em;
+  }
+
+  .main__publicacion {
+    grid-column: 3/11;
+    font-size: large;
+
+    .image-container {
+      text-align: center;
     }
+
+    img#primeraImagen {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+    }
+
+    iframe {
+      display: block;
+      margin: 0 auto;
+      width: 70%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  #main__publicacion--título {
+    font-size: 3em;
+  }
+
+  .main__publicacion--textoSmall {
+    text-align: center;
+    margin-top: 5px;
+    font-size: large;
+    margin-bottom: 2em;
+  }
+
+  .main__publicacion--descripcionAutor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 45px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    img {
+      max-width: 100%;
+      margin-right: 1em;
+      border-radius: 100%;
+    }
+  }
+}
+
+footer {
+  @include establecer-grid();
+  background-color: $color-fondo-footer;
+  img {
+    grid-column: 3/11;
+  }
+  p {
+    grid-column: 3/11;
+    color: $color-letra-footer;
+  }
+}
+
+//Estilos Para Recursos
+
+.RECURSOSmain__content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4/11;
+
+  li {
+    padding: 8px;
+  }
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+#RECURSOSmain__publicacion--título {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.enlace-lista ul,
+.enlace-lista ul li {
+  list-style-type: square;
+}
+
+//Estilos Para Terminologia
+.main__publicacion img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#TERMINOLOGIAmain__enlaceReferencia {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em;
+}
+
+#TERMINOLOGIAvideo {
+  display: flex;
+  flex-direction: column;
+  i {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+  }
+}
+
+#TERMINOLOGIAquote {
+  display: flex;
+  justify-content: center;
+
+  blockquote {
+    max-width: 60%;
+    padding: 1.5em;
+    border-left: 5px solid #DDDDDD;
+    background-color: #EEEEEE;
+  }
 }

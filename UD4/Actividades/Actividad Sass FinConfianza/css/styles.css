@@ -1,26 +1,12 @@
-/*
-
-Color de fondo:
-#FFFFFF
-
-Color de letra:
-#000000
-
-Color Header fondo: 
-#000000
-
-Color de letra Header:
-#FFFFFF
-
-Color fondo Nav: 
-#F0F0F0
-
-Color de letra Nav: 
-#222222
-
-*/
+@charset "UTF-8";
 body {
   margin: 0;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 2/12;
 }
 
 .header {
@@ -28,18 +14,14 @@ body {
   color: #ffffff;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-color: pink;
 }
-.header h1 {
-  grid-column: 1/12;
-}
-
-.header__zonaLogo {
-  background-color: greenyellow;
+.header .header__zonaLogo {
+  grid-column: 3/11;
+  font-size: 2em;
 }
 
 .nav-bar {
-  background-color: #838282;
+  background-color: #ffffff;
   color: #222222;
   display: flex;
   justify-content: center;
@@ -51,16 +33,22 @@ body {
   padding-left: 1em;
   padding-right: 1em;
 }
-.nav-bar div a {
+.nav-bar div ul {
+  list-style: none;
+  display: flex;
+}
+.nav-bar div ul li {
+  padding: 0 1em;
+}
+.nav-bar div ul li a {
   text-decoration: none;
   color: inherit;
   padding: 1em;
 }
-.nav-bar div a:hover {
+.nav-bar div ul li a:hover {
   border-bottom: 2px solid #b31312;
 }
-
-.a_active {
+.nav-bar div ul li a.a__active {
   border-bottom: 2px solid #b31312;
 }
 
@@ -70,8 +58,124 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+.main-content a {
+  color: red;
+  text-decoration: none;
+}
+.main-content section {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 1.5em;
+}
 .main-content .main__publicacion {
   grid-column: 3/11;
+  font-size: large;
+}
+.main-content .main__publicacion .image-container {
+  text-align: center;
+}
+.main-content .main__publicacion img#primeraImagen {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+.main-content .main__publicacion iframe {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.main-content #main__publicacion--título {
+  font-size: 3em;
+}
+.main-content .main__publicacion--textoSmall {
+  text-align: center;
+  margin-top: 5px;
+  font-size: large;
+  margin-bottom: 2em;
+}
+.main-content .main__publicacion--descripcionAutor {
+  display: flex;
+  align-items: center;
+  margin-bottom: 45px;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+.main-content .main__publicacion--descripcionAutor img {
+  max-width: 100%;
+  margin-right: 1em;
+  border-radius: 100%;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-color: #3b3b3b;
+}
+footer img {
+  grid-column: 3/11;
+}
+footer p {
+  grid-column: 3/11;
+  color: #f0f0f0;
+}
+
+.RECURSOSmain__content {
+  display: flex;
+  flex-direction: column;
+  grid-column: 4/11;
+}
+.RECURSOSmain__content li {
+  padding: 8px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+#RECURSOSmain__publicacion--título {
+  font-size: 3em;
+  margin-bottom: 0;
+}
+
+.enlace-lista ul,
+.enlace-lista ul li {
+  list-style-type: square;
+}
+
+.main__publicacion img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#TERMINOLOGIAmain__enlaceReferencia {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5em;
+}
+
+#TERMINOLOGIAvideo {
+  display: flex;
+  flex-direction: column;
+}
+#TERMINOLOGIAvideo i {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: medium;
+}
+
+#TERMINOLOGIAquote {
+  display: flex;
+  justify-content: center;
+}
+#TERMINOLOGIAquote blockquote {
+  max-width: 60%;
+  padding: 1.5em;
+  border-left: 5px solid #DDDDDD;
+  background-color: #EEEEEE;
 }
 
 /*# sourceMappingURL=styles.css.map */
