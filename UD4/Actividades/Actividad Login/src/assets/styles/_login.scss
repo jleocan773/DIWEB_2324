@@ -1,0 +1,44 @@
+.login__main {
+    display: grid;
+    grid-template-columns: repeeat(12, 1fr);
+    min-height: 90vh;
+
+    .main__zonaCorporativa {
+        grid-column: 2/7;
+        background-color: aliceblue;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main__zonaForm {
+        grid-column: 7/12;
+        background-color: rgb(41, 62, 80);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .zonaForm__login-form {
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 2em 1em 2em 1em;
+
+            .login-form__box {
+                margin-bottom: 1en;
+                display: flex;
+                flex-direction: column;
+
+                .box-icon{
+                    background-image: url(../../assets/images/avatar.png);
+                    z-index: 1;
+
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}
