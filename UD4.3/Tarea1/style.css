@@ -1,0 +1,52 @@
+/* Estilo para el header y el logo */
+
+header {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+#logo {
+	max-width: 10%;
+	max-height: 10%;
+}
+
+/* Estilo para la tabla */
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+th,
+td {
+	border: 1px solid grey;
+	padding: 8px;
+	text-align: left;
+	color: #f1c40f;
+	background-color: #001f3f;
+}
+
+th {
+	background-color: #0053a7;
+}
+
+caption {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+tfoot td {
+    background-color: #0053a7;
+    text-align: center;
+}
+
+.separacion td {
+	border: 0;
+	padding: 0;
+    height: 10px;
+	background-color: white;
+}
