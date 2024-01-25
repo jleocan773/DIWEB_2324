@@ -1,18 +1,34 @@
 <form class="main__formularioContacto" action="#">
 
-    <div role="region" class="formularioContacto__groupPassword">
-        <label for="nombre" id="label__nombre" aria-label="input__nombre">Nombre</label>
-        <input type="text" name="input__nombre" id="input__nombre" aria-labelledby="label__nombre">
+    <div role="region">
+        <p>🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼
+            🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼🎋🐼
+        </p>
     </div>
 
-    <div role="region" class="formularioContacto__groupNombre">
-        <label for="password" id="label__password" aria-label="input__password">Password</label>
-        <input type="text" name="input__password" id="input__password" aria-labelledby="label__password" required
-            aria-required="true">
+    <div role="region" class="formularioContacto__group">
+        <label for="nombre" id="label__nombre" aria-label="input__nombre">Nombre <span
+                class="color__red">*</span></label>
+        <input class="input__text" type="text" name="input__nombre" id="input__nombre" aria-labelledby="label__nombre"
+            required aria-required="true" placeholder="Escriba aquí su Nombre">
     </div>
 
-    <div role="region" class="formularioContacto__groupBotonera">
-        <button type="submit" disabled aria-disabled="true">Enviar</button>
+    <div role="region" class="formularioContacto__group">
+        <label for="apellidos" id="label__apellidos" aria-label="input__apellidos">Apellidos</label>
+        <input class="input__text" type="text" name="input__apellidos" id="input__apellidos"
+            aria-labelledby="label__apellidos" required aria-required="true" placeholder="Escriba aquí sus Apellidos">
+    </div>
+
+    <div role="region" class="formularioContacto__group formularioContacto__group--botonera">
+        <button class="button_normal button_normal--send" type="submit">Enviar</button>
+    </div>
+
+    <div role="region" class="formularioContacto__group">
+        <p for="campos_obligatorios" type="text">Campos obligatorios <span class="color__red">*</span></p>
+    </div>
+
+    <div role="region" class="formularioContacto__group--checkbox">
+        <input for="input__checkbox" type="checkbox">Acepte los términos y condiciones</input>
     </div>
 
 </form>

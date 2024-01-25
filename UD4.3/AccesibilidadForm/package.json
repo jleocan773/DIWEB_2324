@@ -1,8 +1,8 @@
 {
-  "name": "SitioMiguelSalvado",
+  "name": "UbriPandas",
   "version": "1.0.0",
   "private": true,
-  "description": "Sitio web del artista Miguel Salvado",
+  "description": "Sitio web de los pandas de Ubrique",
   "scripts": {
     "parcel:serve": "parcel src/contacto.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/contacto.html --target web --no-source-maps --no-cache",

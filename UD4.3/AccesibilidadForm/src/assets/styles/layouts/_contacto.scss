@@ -1,38 +1,74 @@
-.contacto__main{   
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contacto__main {
+  display: grid;
+  grid-template-columns: 25% 75%;
 
-    .main__formularioContacto{
-        display: flex;
-        flex-direction: column;
+  label {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+  }
 
-        row-gap: 1em;
+  .input__text {
+    width: 50%;
+    height: 2em;
 
-        border: 2px solid $ubriWeb-corporate;
-        border-radius: 1em;
+    padding: 1em;
 
-        padding: 2em;
-        background-color: $ubriWeb-bg;
-
-        .formularioContacto__groupPassword{
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .formularioContacto__groupNombre{
-            display: flex;
-            flex-direction: column;
-
-        }
-
-        .formularioContacto__groupBotonera{
-            display: flex;
-            flex-direction: column;
-
-        }
-
+    &:hover {
+      border: 3px solid $ubriWeb-corporate-3-scaled;
     }
 
+    &:focus {
+      border: 3px solid $ubriWeb-corporate-3;
+      outline: none;
+    }
+  }
+
+  .main__formularioContacto {
+    grid-column: 2/3;
+    background-color: $ubriWeb-bg;
+    padding: 1em;
+    border-left: 2px solid $color-black;
+
+    .formularioContacto__group {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 1em;
+    }
+
+    .formularioContacto__group--checkbox {
+      flex-direction: row;
+
+      label{
+        font-weight: normal;
+        padding-bottom: 0%;
+      }
+    }
+
+    .formularioContacto__group--botonera {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .button_normal {
+    width: 10em;
+    height: 3em;
+    outline: none;
+    border: none;
+
+    font-weight: bold;
+
+    &:hover {
+        cursor:pointer;
+    }
+
+    &:active {
+        background-color: $ubriWeb-corporate-4-scaled;
+        border: 2px solid  $ubriWeb-corporate-4;
+    }
+  }
+
+  .button_normal--send {
+    background-color: $ubriWeb-corporate-4;
+  }
 }
