@@ -17,6 +17,16 @@
 
     <section>
 
+        <h1>Indica y explica usando tus palabras, al menos 1 herramienta que
+            se use para poder superar las barreras presentadas por las
+            diferentes diversidades funcionales vistas en clase</h1>
+
+        <p>Tobii Eye Tracker permite a una persona navegar por una página web usando sus ojos, esto requiere de una
+            parte software y hardware, aunque Windows dispone ya de compatibilidad con el hardware. El hardware
+            analizará entonces el movimiento de los ojos del usuario, permitiéndole navegar por la página web, ya sea
+            desplázándose, clicando enlaces, buscando información, etc.
+        </p>
+
         <table>
             <caption>Principios de Accesibilidad y Niveles de Conformidad</caption>
             <thead>
@@ -30,25 +40,79 @@
             </thead>
             <tbody>
                 <tr>
-                    <td scope="rowgroup" rowspan="4">Perceptible</td>
-                    <td>PAUTA 1</td>
-                    <td>Contenido no textual: Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.</td>
-                    </tr>
-                <tr>
-                    <td>PAUTA 2</td>
-                    <td>Sólo audio y sólo vídeo (grabado): Para contenido sólo audio grabado y contenido sólo vídeo grabado, se cumple lo siguiente, excepto cuando el audio o el vídeo es un contenido multimedia alternativo al texto y está claramente identificado como tal.</td>
-                    <td>Subtítulos (en directo): Se proporcionan subtítulos para todo el contenido de audio en directo de los multimedia sincronizados.</td>
-                    <td>Lengua de señas (grabado): Se proporciona una interpretación en lengua de señas para todo el contenido de audio grabado dentro de contenido multimedia sincronizado.</td>
+                    <td class="textoResaltado" scope="rowgroup" rowspan="4">PERCEPTIBLE</td>
+                    <td class="textoResaltado">PAUTA 1: <br> Alternativas textuales</td>
+                    <td>Contenido no textual: Todo contenido no textual que se presenta al usuario tiene una alternativa
+                        textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.
+                    </td>
                 </tr>
                 <tr>
-                    <td>PAUTA 3</td>
-                    <td>Información y relaciones: La información, estructura y relaciones comunicadas a través de la presentación pueden ser determinadas por software o están disponibles como texto.</td>
+                    <td class="textoResaltado">PAUTA 2: <br> Medios tempodependientes</td>
+                    <td>Sólo audio y sólo vídeo (grabado): Para contenido sólo audio grabado y contenido sólo vídeo
+                        grabado, se cumple lo siguiente, excepto cuando el audio o el vídeo es un contenido multimedia
+                        alternativo al texto y está claramente identificado como tal.</td>
+                    <td>Subtítulos (en directo): Se proporcionan subtítulos para todo el contenido de audio en directo
+                        de los multimedia sincronizados.</td>
+                    <td>Lengua de señas (grabado): Se proporciona una interpretación en lengua de señas para todo el
+                        contenido de audio grabado dentro de contenido multimedia sincronizado.</td>
                 </tr>
                 <tr>
-                    <td>PAUTA 4</td>
-                    <td>Uso del color: El color no se usa como único medio visual para transmitir la información, indicar una acción, solicitar una respuesta o distinguir un elemento visual.</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 4.5:1</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 7:1</td>
+                    <td class="textoResaltado">PAUTA 3: Adaptable</td>
+                    <td>Información y relaciones: La información, estructura y relaciones comunicadas a través de la
+                        presentación pueden ser determinadas por software o están disponibles como texto.</td>
+                </tr>
+                <tr>
+                    <td class="textoResaltado">PAUTA 4: Distinguible</td>
+                    <td>Uso del color: El color no se usa como único medio visual para transmitir la información,
+                        indicar una acción, solicitar una respuesta o distinguir un elemento visual.</td>
+                    <td>Contraste (mínimo): La presentación visual de texto e imágenes de texto tiene una relación de
+                        contraste de, al menos, 4.5:1</td>
+                    <td>Contraste (mejorado): La presentación visual de texto e imágenes de texto tiene una relación de
+                        contraste de, al menos, 7:1</td>
+                </tr>
+
+                <tr class="separacion">
+                    <td colspan="6"></td>
+                </tr>
+
+                <tr>
+                    <td class="textoResaltado" scope="rowgroup" rowspan="4">OPERABLE</td>
+                    <td class="textoResaltado">PAUTA 1: <br> Accesible por teclado</td>
+                    <td>Teclado: Toda la funcionalidad del contenido es operable a través de una interfaz de teclado sin
+                        que se requiera una determinada velocidad para cada pulsación individual de las teclas, excepto
+                        cuando la función interna requiere de una entrada que depende del trayecto de los movimientos
+                        del usuario y no sólo de los puntos inicial y final.</td>
+                    <td class="vacio"></td>
+                    <td>Teclado (sin excepciones): Toda la funcionalidad del contenido se puede operar a través de una
+                        interfaz de teclado sin requerir una determinada velocidad en la pulsación de las teclas.</td>
+                </tr>
+                <tr>
+                    <td class="textoResaltado">PAUTA 2: <br> Tiempo suficiente</td>
+                    <td>Tiempo ajustable: Para cada límite de tiempo impuesto por el contenido, se cumple al menos uno
+                        de los siguientes casos: Apagar, Ajustar, Extender, Excepción de Tiempo Real, Excepción por ser
+                        esencial o por Excepción de 20 horas.</td>
+                    <td class="vacio"></td>
+                    <td>Sin tiempo: El tiempo no es parte esencial del evento o actividad presentada por el contenido,
+                        exceptuando los multimedia sincronizados no interactivos y los eventos en tiempo real.</td>
+                </tr>
+                <tr>
+                    <td class="textoResaltado">PAUTA 3: Convulsiones</td>
+                    <td>Umbral de tres destellos o menos: Las páginas web no contienen nada que destelle más de tres
+                        veces en un segundo, o el destello está por debajo del umbral de destello general y de destello
+                        rojo</td>
+                    <td class="vacio"></td>
+                    <td>Tres destellos: Las páginas web no contienen nada que destelle más de tres veces por segundo.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="textoResaltado">PAUTA 4: <br> Navegable</td>
+                    <td>Evitar bloques: Existe un mecanismo para evitar los bloques de contenido que se repiten en
+                        múltiples páginas web.</td>
+                    <td>Múltiples vías: Se proporciona más de un camino para localizar una página web dentro de un
+                        conjunto de páginas web, excepto cuando la página es el resultado, o un paso intermedio, de un
+                        proceso.</td>
+                    <td>Ubicación: Se proporciona información acerca de la ubicación del usuario dentro de un conjunto
+                        de páginas web.</td>
                 </tr>
 
                 <tr class="separacion">
@@ -56,78 +120,51 @@
                 </tr>
 
                 <tr>
-                    <td scope="rowgroup" rowspan="4">Operable</td>
-                    <td>PAUTA 1</td>
-                    <td>Contenido no textual: Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.</td>
-                    </tr>
-                <tr>
-                    <td>PAUTA 2</td>
-                    <td>Sólo audio y sólo vídeo (grabado): Para contenido sólo audio grabado y contenido sólo vídeo grabado, se cumple lo siguiente, excepto cuando el audio o el vídeo es un contenido multimedia alternativo al texto y está claramente identificado como tal.</td>
-                    <td>Subtítulos (en directo): Se proporcionan subtítulos para todo el contenido de audio en directo de los multimedia sincronizados.</td>
-                    <td>Lengua de señas (grabado): Se proporciona una interpretación en lengua de señas para todo el contenido de audio grabado dentro de contenido multimedia sincronizado.</td>
+                    <td class="textoResaltado" scope="rowgroup" rowspan="3">COMPRENSIBLE</td>
+                    <td class="textoResaltado">PAUTA 1: <br> Legible</td>
+                    <td>Idioma de la página: El idioma predeterminado de cada página web puede ser determinado por
+                        software.
+                    </td>
+                    <td> Idioma de las partes: El idioma de cada pasaje o frase en el contenido puede ser determinado
+                        por software, excepto los nombres propios, términos técnicos, palabras en un idioma
+                        indeterminado y palabras o frases que se hayan convertido en parte natural del texto que las
+                        rodea.</td>
+                    <td>Palabras inusuales: Se proporciona un mecanismo para identificar las definiciones específicas de
+                        palabras o frases usadas de modo inusual o restringido, incluyendo expresiones idiomáticas y
+                        jerga.</td>
                 </tr>
                 <tr>
-                    <td>PAUTA 3</td>
-                    <td>Información y relaciones: La información, estructura y relaciones comunicadas a través de la presentación pueden ser determinadas por software o están disponibles como texto.</td>
+                    <td class="textoResaltado">PAUTA 2: <br> Predecible</td>
+                    <td> Al recibir el foco: Cuando cualquier componente recibe el foco, no inicia ningún cambio en el
+                        contexto.</td>
+                    <td>Navegación coherente: Los mecanismos de navegación que se repiten en múltiples páginas web
+                        dentro de un conjunto de páginas web aparecen siempre en el mismo orden relativo cada vez que se
+                        repiten, a menos que el cambio sea provocado por el propio usuario. </td>
+                    <td>Cambios a petición: Los cambios en el contexto son iniciados únicamente a solicitud del usuario
+                        o se proporciona un mecanismo para detener tales cambios.</td>
                 </tr>
                 <tr>
-                    <td>PAUTA 4</td>
-                    <td>Uso del color: El color no se usa como único medio visual para transmitir la información, indicar una acción, solicitar una respuesta o distinguir un elemento visual.</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 4.5:1</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 7:1</td>
-                </tr>
-
-                <tr class="separacion">
-                    <td colspan="6"></td>
-                </tr>
-                
-                <tr>
-                    <td scope="rowgroup" rowspan="4">Comprensible</td>
-                    <td>PAUTA 1</td>
-                    <td>Contenido no textual: Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.</td>
-                    </tr>
-                <tr>
-                    <td>PAUTA 2</td>
-                    <td>Sólo audio y sólo vídeo (grabado): Para contenido sólo audio grabado y contenido sólo vídeo grabado, se cumple lo siguiente, excepto cuando el audio o el vídeo es un contenido multimedia alternativo al texto y está claramente identificado como tal.</td>
-                    <td>Subtítulos (en directo): Se proporcionan subtítulos para todo el contenido de audio en directo de los multimedia sincronizados.</td>
-                    <td>Lengua de señas (grabado): Se proporciona una interpretación en lengua de señas para todo el contenido de audio grabado dentro de contenido multimedia sincronizado.</td>
-                </tr>
-                <tr>
-                    <td>PAUTA 3</td>
-                    <td>Información y relaciones: La información, estructura y relaciones comunicadas a través de la presentación pueden ser determinadas por software o están disponibles como texto.</td>
-                </tr>
-                <tr>
-                    <td>PAUTA 4</td>
-                    <td>Uso del color: El color no se usa como único medio visual para transmitir la información, indicar una acción, solicitar una respuesta o distinguir un elemento visual.</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 4.5:1</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 7:1</td>
+                    <td class="textoResaltado">PAUTA 3: <br> Entrada de datos asistida</td>
+                    <td>Identificación de errores: Si se detecta automáticamente un error en la entrada de datos, el
+                        elemento erróneo es identificado y el error se describe al usuario mediante un texto.</td>
+                    <td>Sugerencias ante errores: Si se detecta automáticamente un error en la entrada de datos y se
+                        dispone de sugerencias para hacer la corrección, entonces se presentan las sugerencias al
+                        usuario, a menos que esto ponga en riesgo la seguridad o el propósito del contenido.</td>
+                    <td>Ayuda: Se proporciona ayuda dependiente del contexto.</td>
                 </tr>
 
                 <tr class="separacion">
                     <td colspan="6"></td>
                 </tr>
-                
+
                 <tr>
-                    <td scope="rowgroup" rowspan="4">Robusto</td>
-                    <td>PAUTA 1</td>
-                    <td>Contenido no textual: Todo contenido no textual que se presenta al usuario tiene una alternativa textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.</td>
-                    </tr>
-                <tr>
-                    <td>PAUTA 2</td>
-                    <td>Sólo audio y sólo vídeo (grabado): Para contenido sólo audio grabado y contenido sólo vídeo grabado, se cumple lo siguiente, excepto cuando el audio o el vídeo es un contenido multimedia alternativo al texto y está claramente identificado como tal.</td>
-                    <td>Subtítulos (en directo): Se proporcionan subtítulos para todo el contenido de audio en directo de los multimedia sincronizados.</td>
-                    <td>Lengua de señas (grabado): Se proporciona una interpretación en lengua de señas para todo el contenido de audio grabado dentro de contenido multimedia sincronizado.</td>
+                    <td class="textoResaltado" scope="rowgroup">ROBUSTO</td>
+                    <td class="textoResaltado">PAUTA 1: Compatible</td>
+                    <td>Contenido no textual: Todo contenido no textual que se presenta al usuario tiene una alternativa
+                        textual que cumple el mismo propósito, excepto en las situaciones enumeradas a continuación.
+                    </td>
                 </tr>
-                <tr>
-                    <td>PAUTA 3</td>
-                    <td>Información y relaciones: La información, estructura y relaciones comunicadas a través de la presentación pueden ser determinadas por software o están disponibles como texto.</td>
-                </tr>
-                <tr>
-                    <td>PAUTA 4</td>
-                    <td>Uso del color: El color no se usa como único medio visual para transmitir la información, indicar una acción, solicitar una respuesta o distinguir un elemento visual.</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 4.5:1</td>
-                    <td>La presentación visual de texto e imágenes de texto tiene una relación de contraste de, al menos, 7:1</td>
-                </tr>
+
             </tbody>
             <tfoot>
                 <tr>

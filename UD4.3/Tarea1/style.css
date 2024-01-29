@@ -8,6 +8,10 @@ header {
 	text-align: center;
 }
 
+h1 {
+	color: #0053a7;
+}
+
 #logo {
 	max-width: 10%;
 	max-height: 10%;
@@ -47,6 +51,16 @@ tfoot td {
 .separacion td {
 	border: 0;
 	padding: 0;
-    height: 10px;
+    height: 20px;
 	background-color: white;
+}
+
+.vacio{
+	background-color: white;
+	border: 0;
+}
+
+.textoResaltado {
+    font-weight: bold;
+    text-align: center;
 }
