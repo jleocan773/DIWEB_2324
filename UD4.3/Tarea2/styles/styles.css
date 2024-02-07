@@ -119,13 +119,13 @@ textarea:focus {
 
 .botonContainer {
   display: flex;
-  justify-content: center; /* Centra el botón horizontalmente */
-  margin-top: auto; /* Empuja el contenedor hacia abajo, centrándolo verticalmente */
+  justify-content: center;
+  margin-top: auto;
 }
 
 .botonEnviar {
-  font-size: 30px; /* Aumenta el tamaño del texto */
-  padding: 10px 20px; /* Añade relleno alrededor del texto */
-  width: 100%; /* Hace que el botón ocupe todo el ancho disponible */
-  max-width: 300px; /* Limita el ancho máximo para evitar que el botón sea demasiado grande en pantallas muy anchas */
+  font-size: 30px;
+  padding: 10px 20px;
+  width: 100%;
+  max-width: 300px; 
 }
