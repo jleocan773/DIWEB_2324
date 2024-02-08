@@ -137,3 +137,9 @@ textarea:focus {
   display: flex;
   justify-content: space-around;
 }
+
+.botonEnviar{
+  background-color: #F1C83E;
+  border: 2px solid black;
+  border-radius: 80%;
+}
