@@ -1,6 +1,11 @@
 .header {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  color: black;
+
+  position: sticky;
+  top: 0;
+  width: 100%;
 
   min-height: 10vh;
 
@@ -29,7 +34,7 @@
     a {
       padding: 1.5em;
       text-decoration: none;
-      color: black;
+      color: inherit;
       transition: all .2s ease-in;
       
     }
