@@ -31,13 +31,13 @@ document.addEventListener("DOMContentLoaded", function () {
   const hora = fecha.getHours();
   console.log("hora");
 
-  if (hora >= 6 && hora < 18) {
-    //Si la hora es mayor o igual que las 6 de la mañana pero menor que las 6 de la tarde se muestra el fondo de día
-	body.style.backgroundImage = "url(../../imgs/fondoDia.png)";
-	body.style.backgroundColor = "#7FAD72";
-} else {
-    //De  lo contrario, se muestra el fondo de noche
-    body.style.backgroundImage = "url('./assets/imgs/AAAAAAAAA.jpg')";
-    body.style.backgroundColor = "#232055";
-  }
+//   if (hora >= 6 && hora < 18) {
+//     //Si la hora es mayor o igual que las 6 de la mañana pero menor que las 6 de la tarde se muestra el fondo de día
+// 	body.style.backgroundImage = "url(../../imgs/fondoDia.png)";
+// 	body.style.backgroundColor = "#7FAD72";
+// } else {
+//     //De  lo contrario, se muestra el fondo de noche
+//     body.style.backgroundImage = "url('./assets/imgs/AAAAAAAAA.jpg')";
+//     body.style.backgroundColor = "#232055";
+//   }
 });

@@ -2,26 +2,27 @@
 
 @font-face {
   font-family: "PokeClassic";
-  src: url("../../fonts/PokemonClassic.ttf") format("truetype");
+  src: url("../fonts/PokemonClassic.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "OpenDyslexic3-Bold";
-  src: url("../../fonts/OpenDyslexic3-Bold.ttf") format("truetype");
+  src: url("../fonts/OpenDyslexic3-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "OpenDyslexic3-Regular";
-  src: url("../../fonts/OpenDyslexic3-Regular.ttf") format("truetype");
+  src: url("../fonts/OpenDyslexic3-Regular.ttf") format("truetype");
 }
 
 body {
-  margin: 10px;
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  background-image: url("../../imgs/fondoDia.png");
+  background-image: url("../imgs/fondoDia.png");
   background-size: 100%;
   background-repeat: no-repeat;
+  background-color: #CF1F36;
 }
 
 header {
@@ -45,8 +46,8 @@ header {
 
 .zonaFormulario {
   grid-column: 5/9;
-  height: 58em;
-  background-image: url("../..//imgs/fondoPokedex.png");
+  height: 100vh;
+  background-image: url("../imgs/fondoPokedex.png");
   background-size: 100%;
 
   font-family: PokeClassic;
@@ -143,3 +144,4 @@ textarea:focus {
   border-radius: 80%;
   cursor: pointer;
 }
+
