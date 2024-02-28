@@ -15,11 +15,22 @@
   src: url("../fonts/OpenDyslexic3-Regular.ttf") format("truetype");
 }
 
-body {
+
+.fondoDia {
   margin: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   background-image: url("../imgs/fondoDia.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #CF1F36;
+}
+
+.fondoNoche{
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  background-image: url("../imgs/fondoNoche.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-color: #CF1F36;
