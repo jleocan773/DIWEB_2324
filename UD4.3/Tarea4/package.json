@@ -1,8 +1,8 @@
 {
-  "name": "Pokedle",
+  "name": "Pokemondle",
   "version": "1.0.0",
   "private": true,
-  "description": "Formulario contacto accesible",
+  "description": "Pokemondle",
   "scripts": {
     "parcel:serve": "parcel src/contacto.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/contacto.html --target web --no-source-maps --no-cache",
@@ -26,8 +26,8 @@
     "url": "git+"
   },
   "author1": {
-    "name": "Diego Linares",
-    "email": "dlinort062@g.educaand.es"
+    "name": "Jonathan León",
+    "email": "jleocan773@g.educaand.es"
   },
   "license": "MIT",
   "homepage": "",
