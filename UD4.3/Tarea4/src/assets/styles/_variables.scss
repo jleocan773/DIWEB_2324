@@ -37,3 +37,26 @@ $mqMinWidth: 420px;
   right: 5px;
   top: 1.5em;
 }
+
+
+/* Tipografía */
+
+@font-face {
+  font-family: "PokeClassic";
+  src: url("../fonts/PokemonClassic.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenDyslexic3-Bold";
+  src: url("../fonts/OpenDyslexic3-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "OpenDyslexic3-Regular";
+  src: url("../fonts/OpenDyslexic3-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "PokeEmerald";
+  src: url("../fonts/PokemonEmerald.ttf") format("truetype");
+}

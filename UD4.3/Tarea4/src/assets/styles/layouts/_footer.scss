@@ -1,6 +1,6 @@
 footer {
   margin: 0;
-  padding-top: 5px;
+  padding-top: 20px;
   grid-column: 1 / -1;
   align-self: end;
   width: 100%;
@@ -15,7 +15,6 @@ footer {
   height: 7.6vh;
   border-top: 3px solid #150001;
 }
-
 
 .footer-container img {
   height: 3.5em;
@@ -37,3 +36,20 @@ footer {
   align-items: right;
 }
 
+.footerEnlaceInicio,
+.footerEnlaceContacto,
+.footerEnlacePrivacidad,
+.footerEnlaceFacebook,
+.footerEnlaceTwitter,
+.footerEnlaceInstagram {
+  transition: 0.2s linear;
+}
+
+.footerEnlaceInicio:hover,
+.footerEnlaceContacto:hover,
+.footerEnlacePrivacidad:hover,
+.footerEnlaceFacebook:hover,
+.footerEnlaceTwitter:hover,
+.footerEnlaceInstagram:hover {
+  transform: scale(1.05);
+}
