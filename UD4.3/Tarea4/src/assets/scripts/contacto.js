@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     body.style.fontFamily = "'OpenDyslexic3-Regular', Arial, sans-serif";
     //Cambiamos la fuennte del formulario y su longitud, ya que se alargan los elementos
     form.style.fontFamily = "'OpenDyslexic3-Regular', Arial, sans-serif";
-    form.style.height = "60.8em";
+    form.style.height = "61.8em";
     //Cambiamos la fuente y el tamaño de los input
     inputs.forEach((input) => {
       input.style.fontFamily = "'OpenDyslexic3-Regular', Arial, sans-serif";
