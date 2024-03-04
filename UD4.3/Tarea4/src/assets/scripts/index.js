@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const hora = fecha.getHours();
   console.log("hora");
 
-  if (hora >= 19 && hora < 18) {
+  if (hora >= 6 && hora < 18) {
     //Si la hora es mayor o igual que las 6 de la mañana pero menor que las 6 de la tarde se muestra el fondo de día
     body.classList.add("fondoDia");
   } else {
