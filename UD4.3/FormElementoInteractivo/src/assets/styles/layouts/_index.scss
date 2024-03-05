@@ -33,7 +33,6 @@
     .botonesTab__pestana:hover {
       background-color: $ubriWeb-corporate-hover;
       transition: all 0.2 ease;
-
     }
 
     .activo {
@@ -41,19 +40,45 @@
     }
   }
 
-  .tabs__contenedorTexto{
+  .tabs__contenedorTexto {
     position: relative;
     overflow: hidden;
     min-height: 20vh;
 
-    .contenedorTexto__bloque{  
-        position: absolute;
-        top: 0;
-        opacity: 0;
+    .contenedorTexto__bloque {
+      position: absolute;
+      top: 0;
+      opacity: 0;
     }
 
     .activo {
-        opacity: 1;
+      opacity: 1;
+    }
+  }
+}
+
+.main__acordeon {
+  .acordeon__divContenedor {
+    .divContenedor__titulo {
+      background-color: chartreuse;
+      padding: 1rem;
+
+      @include neo(1, 1em, 1em);
+    }
+
+    .divContenedor__contenido {
+      background-color: blueviolet;
+      padding: 0;
+      height: 0;
+      overflow: hidden;
+
+      transition: all 0.5s ease;
+    }
+
+    .divContenedor__contenido--activo {
+      padding: 1rem;
+      min-height: 4rem;
+      overflow: auto;
     }
   }
 }
