@@ -23,13 +23,14 @@
  * It's a best practice to use a different partial for each page
  */
 @import "layouts/general";
-@import "layouts/mixins";
 //@import "layouts/reset";
+@import "layouts/mixins";
 
 @import "layouts/footer";
 @import "layouts/contacto";
 @import "layouts/index";
 @import "layouts/header";
+@import "layouts/proyectos";
 
 
 
